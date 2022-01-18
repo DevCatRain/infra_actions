@@ -63,4 +63,3 @@ jobs:
             sudo docker pull ${{  secrets.DOCKER_USERNAME  }}/infra_actions
             sudo docker stop $(sudo docker ps -a -q)
             sudo docker run --rm -d -p 8000:8000 ${{  secrets.DOCKER_USERNAME  }}/infra_actions
- 
